@@ -1,0 +1,16 @@
+#use SELECT to order the items by price
+SELECT item_name, price
+FROM superstore
+ORDER BY price asce;
+
+#Show a statistic about the item prices
+avg(price)
+FROM superstore;
+
+#Show a statistic about the price for items in the category of "Kitchen Supplies"
+SELECT avg(price)
+FROM superstore
+WHERE category="Kitchen Supplies"
+
+
+
